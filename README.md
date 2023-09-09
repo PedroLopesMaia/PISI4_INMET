@@ -1,6 +1,6 @@
-<img align="left" width="300" src="https://github.com/PedroLopesMaia/PISI4_INMET/assets/34479719/1235a399-af2f-4d22-b1c5-f524ce386e4c" />
-
 # UFRPE-BSI 2020.1 | Projeto Interdiciplinar para Sistemas de Informação IV
+
+<img align="right" width="300" src="https://github.com/PedroLopesMaia/PISI4_INMET/assets/34479719/1235a399-af2f-4d22-b1c5-f524ce386e4c" />
 
 O projeto consistiu no desenvolvimento de um sistema distribuído em nuvem, utilizando alguns dos serviços disponíveis no AWS Educate,           
 que são capazes de integrar dados meteorológicos de estações do Instituto Nacional de Meteorologia (INMET) existentes no estado de Pernambuco.
