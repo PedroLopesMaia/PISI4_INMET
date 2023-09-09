@@ -1,0 +1,7 @@
+# UFRPE-BSI 2020.1 | Projeto Interdiciplinar para Sistemas de Informação IV
+
+O projeto consistiu no desenvolvimento de um sistema distribuído em nuvem, utilizando alguns dos serviços disponíveis no AWS Educate, que são capazes de integrar dados meteorológicos de estações do Instituto Nacional de Meteorologia (INMET) existentes no estado de Pernambuco.
+
+Cada uma das estações fornece dados de variáveis meteorológicas. As variáveis meteorológicas horárias são capturadas através de um serviço web do próprio INMET implementado em uma API REST. Uma tarefa programada utilizando AWS Lambda e EasyCron.com foi criada para realizar a chamada ao serviço web do INMET, de hora em hora, filtrar os dados e repassá-los para o serviço AWS Kinesis Data Streams. Em seguida, estes dados são processados pelo Kinesis Data Analytics. Os dados processados são então enviados ao Kinesis Data Firehose para persistência em um bucket S3. Os dados persistidos servirão como referência para o processamento no Kinesis Data Analytics e para a API REST de consulta aos dados que foi desenvolvida em outra função AWS Lambda.
+
+![alt text](https://drive.google.com/file/d/1oHKEoUQPfeIOCiH3pw4N3OgBZClVpeW1/view?usp=drive_link)
